@@ -1,0 +1,8 @@
+node_modules/
+reports/
+apidog-reports/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

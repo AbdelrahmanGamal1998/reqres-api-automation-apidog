@@ -1,0 +1,19 @@
+{
+  "name": "reqres-api-automation-apidog",
+  "version": "1.0.0",
+  "description": "API test automation for reqres.in with Apidog CLI, an OpenAPI spec and GitHub Actions",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node scripts/run-tests.js",
+    "lint:spec": "redocly lint apis/openapi.yaml --format=stylish",
+    "preview:spec": "redocly preview-docs apis/openapi.yaml"
+  },
+  "devDependencies": {
+    "@redocly/cli": "^2.65.0",
+    "apidog-cli": "^2.2.12"
+  }
+}
